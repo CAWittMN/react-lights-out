@@ -1,10 +1,19 @@
 .Cell {
+  z-index: 3;
   height: 100px;
   width: 100px;
-  background-color: darkgray;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 5px;
+  background-color: rgb(77, 101, 200);
   cursor: pointer;
+  transition: all 100ms ease-in-out;
+  filter: drop-shadow(0.5rem 1rem 0.5rem grey);
+  position: relative;
 }
 
 .Cell-lit {
+  filter: drop-shadow(0rem 0rem 0rem white);
+  z-index: 0;
   background-color: white;
+  transition: all 100ms ease-in-out;
 }
